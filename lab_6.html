@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #6</title>
+        <style>
+        body
+            {
+                background-color: lightblue
+            }
+        #explanations
+            {
+               width: 600px;
+               height: 200px;
+            }
+        #explanation
+            {
+                width: 400px;
+            }
+        #comments
+            {
+               width: 600px;
+               height: 200px;
+            }
+         table
+            {
+                width: 70%;
+            }
+        table, tr, td, th
+            {
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            th
+            {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Identification Data (Per Government Issued Identification)</legend>
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="last"/>
+        <label for="first">First Name</label>
+        <input type="text" id="first" name="first"/>
+        <label for="middle">Middle Initial</label>
+        <input type="text" id="middle" name="middle"/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>DATE OF BIRTH</legend>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" />
+        </fieldset>
+        </form>
+        <fieldset>
+            <legend>NOTE:</legend>
+        <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is a part of your entire body. Health problems that you may have or medication that you may be taking, could have an important interrelationship with the dentistry you will receive. Thank you for answering the following questions.</p>
+        
+        </fieldset>
+        <fieldset>
+        <form action="#" method="post">
+        <label for="physiciancare">1. Are you under a physician's care presently?</label>
+        <input type="radio" name="physiciancare" value="yes">Yes
+        <input type="radio" name="physiciancare" value="no">No
+        <br>
+        <label for="hospitalized">2. Have you ever been hospitalized or a major surgery?</label>
+        <input type="radio" name="hospitalized" value="yes">Yes
+        <input type="radio" name="hospitalized" value="no">No
+        <br>
+        <label for="injury">3. Have you ever had a serious head or neck injury?</label>
+        <input type="radio" name="injury" value="yes">Yes
+        <input type="radio" name="injury" value="no">No
+        <br>
+        <label for="meds">4. Are you taking medications, pills, or drugs?</label>
+        <input type="radio" name="meds" value="yes">Yes
+        <input type="radio" name="meds" value="no">No
+        <br>
+        <label for="phenfen">5. Do you take, or have ever taken, Phen-Fen or Redux?</label>
+        <input type="radio" name="phenfen" value="yes">Yes
+        <input type="radio" name="phenfen" value="no">No
+        <br>
+        <label for="bisphosphonates">6. Have you ever taken; Fosamax, Boniva, Actonel, or meds containing bisphosphonates?</label>
+        <input type="radio" name="bisphosphonates" value="yes">Yes
+        <input type="radio" name="bisphosphonates" value="no">No
+        <br>
+        <label for="diet">7. Are you on a special diet?</label>
+        <input type="radio" name="diet" value="yes">Yes
+        <input type="radio" name="diet" value="no">No
+        <br>
+        <label for="tobacco">8. Do you use tobacco?</label>
+        <input type="radio" name="tobacco" value="yes">Yes
+        <input type="radio" name="tobacco" value="no">No
+        <br>
+        <label for="controlled">9. Do you now, or have you ever use controlled substances?</label>
+        <input type="radio" name="controlled" value="yes">Yes
+        <input type="radio" name="controlled" value="no">No
+        <br>
+        <br>
+        <label for="explanations">Explain any yes answers above.</label>
+        <textarea id="explanations">Indicate by question number;</textarea><br/>   
+        </form>
+        </fieldset>
+        <fieldset>
+            <legend>Women; Are you</legend>
+        <form action="#" method="post"></form>
+        <label for="pregnant">Pregnant/Trying to get pregnant?</label>
+        <input type="radio" name="pregnant" value="yes">Yes
+        <input type="radio" name="pregnant" value="no">No   
+        <label for="contraceptives">Taking oral contraceptives?</label>
+        <input type="radio" name="contraceptives" value="yes"> Yes
+        <input type="radio" name="contraceptives" value="no">No
+        <label for="nursing">Nursing?</label>
+        <input type="radio" name="nursing" value="yes">Yes
+        <input type="radio" name="nursing" value="no">No
+        </fieldset>
+        <fieldset>
+            <legend>Are you allergic to any of the following?</legend>
+        <form action="#" method="post"></form>
+            <label for="aspirin">Aspirin</label>
+            <input type="checkbox" name="aspirin" unchecked="unchecked">
+            <label for="Penicillin">Penicillin</label>
+            <input type="checkbox" name="Penicillin" unchecked="unchecked">
+            <label for="Codeine">Codeine</label>
+            <input type="checkbox" name="Codeine" unchecked="unchecked">
+            <label for="LocalAnesthetics">Local Anesthetics</label>
+            <input type="checkbox" name="LocalAnesthetics" unchecked="unchecked">
+            <label for="Acrylic">Acrylic</label>
+            <input type="checkbox" name="Acrylic" unchecked="unchecked">
+            <label for="Metal">Metal</label>
+            <input type="checkbox" name="Metal" unchecked="unchecked">
+            <label for="Latex">Latex</label>
+            <input type="checkbox" name="Latex" unchecked="unchecked">
+            <label for="SulfaDrugs">Sulfa Drugs</label>
+            <input type="checkbox" name="SulfaDrugs" unchecked="unchecked">
+            <label for="other">Other</label>
+            <input type="checkbox" name="other" unchecked="unchecked">
+            <label for="explanation">If yes; please explain</label>
+            <textarea id="explanation"></textarea>                                 </fieldset>
+        <fieldset>
+            <legend>Do you have, or have you had, any of the following?</legend>
+        <table>
+            <th></th><th></th><th></th><th></th>
+            <tr>
+                <td>AIDS/HIV Positive <label for="aidshiv"></label> <input type="checkbox" name="aidshiv" unchecked="unchecked"></td> <td>Cortisone Medicine <label for="cortisone"></label><input type="checkbox" name="cortisone" unchecked="unchecked"></td>
+                <td> Hemophilia <label for="hemophilia"></label> <input type="checkbox" name="hemophilia" unchecked="unchecked"></td><td>Radiation Treatments <label for="radiation"></label><input type="checkbox" name="radiation" unchecked="unchecked"></td>
+            </tr>
+            <tr>
+                <td>Alzheimer's Disease <label for="alzheimers"></label><input type="checkbox" name="alzheimers" unchecked="unchecked"></td>
+                <td>Diabetes <label for="diabetes"></label> <input type="checkbox" name="diabetes" unchecked="unchecked"></td>
+                <td>Hepatitis A <label for="hepatitisa"></label> <input type="checkbox" name="hepatitisa" unchecked="unchecked"></td>
+                <td>Recent Weight Loss <label for="weightloss"></label> <input type="checkbox" name="weightloss" unchecked="unchecked"></td>
+            </tr>
+            <tr>
+                <td>Anaphylaxis <label for="anaphylaxis"></label><input type="checkbox" name="aanaphylaxis" unchecked="unchecked"></td>
+                <td>Drug Addiction <label for="drugaddiction"></label> <input type="checkbox" name="drugaddiction" unchecked="unchecked"></td>
+                <td>Hepatitis B or C <label for="hepatitisbc"></label> <input type="checkbox" name="hepatitisbc" unchecked="unchecked"></td>
+                <td>Renal Dialysis <label for="renaldialysis"></label> <input type="checkbox" name="renaldialysis" unchecked="unchecked"></td>
+            </tr>
+            <tr>
+                <td>Anemia <label for="anemia"></label><input type="checkbox" name="anemia" unchecked="unchecked"></td>
+                <td>Easily Winded <label for="easilywinded"></label> <input type="checkbox" name="easilywinded" unchecked="unchecked"></td>
+                <td>Herpes <label for="herpes"></label> <input type="checkbox" name="herpes" unchecked="unchecked"></td>
+                <td>Rheumatic Fever <label for="rheumaticfever"></label> <input type="checkbox" name="rheumaticfever" unchecked="unchecked"></td>
+            </tr>
+            <tr>
+                <td>Angina <label for="angina"></label><input type="checkbox" name="angina" unchecked="unchecked"></td>
+                <td>Emphysema <label for="emphysema"></label> <input type="checkbox" name="emphysema" unchecked="unchecked"></td>
+                <td>High Blood Pressure <label for="hbp"></label> <input type="checkbox" name="hbp" unchecked="unchecked"></td>
+                <td>Rheumatism <label for="rheumatism"></label> <input type="checkbox" name="rheumatism" unchecked="unchecked"></td>
+            </tr>
+            <tr>
+                <td>Arthritis/Gout <label for="arthritisgout"></label><input type="checkbox" name="arthritisgout" unchecked="unchecked"></td>
+                <td>Epilepsy or Seizures <label for="epilepsy"></label> <input type="checkbox" name="epilepsy" unchecked="unchecked"></td>
+                <td>High Cholesterol <label for="highcholesterol"></label> <input type="checkbox" name="highcholesterol" unchecked="unchecked"></td>
+                <td>Scarlet Fever <label for="scarletfever"></label> <input type="checkbox" name="scarletfever" unchecked="unchecked"></td>
+            </tr>
+            <tr>
+                <td>Arthritis/Gout <label for="arthritisgout"></label><input type="checkbox" name="arthritisgout" unchecked="unchecked"></td>
+                <td>Epilepsy or Seizures <label for="epilepsy"></label> <input type="checkbox" name="epilepsy" unchecked="unchecked"></td>
+                <td>High Cholesterol <label for="highcholesterol"></label> <input type="checkbox" name="highcholesterol" unchecked="unchecked"></td>
+                <td>Scarlet Fever <label for="scarletfever"></label> <input type="checkbox" name="scarletfever" unchecked="unchecked"></td>
+            </tr>
+        </table>
+            </fieldset>
+            <fieldset>
+                <legend>Comments:</legend>
+                <form action="#" method="post"></form>
+                <label for="comments"></label> <textarea id="comments"> Type any comments here;</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Acknowledgement:</legend>
+        <p>To the best of my knowledge, the questions on this form have been accurately answered. I understand that providing incorrect information can be dangerous to my (or patient's) health. It is my responsibility to inform the dental office of any changes in medical status.</p><br/>
+        <label for="signature">Signature ; Type Full Name</label>
+        <input type="text" id="signature" name="signature"/> <label for="date">Date </label>
+        <input type="date" id="date" />
+        </fieldset>
+    </body>
+
+</html>
